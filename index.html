@@ -1,0 +1,133 @@
+<!-- Ce document passe avec succès le test de validation HMTL https://validator.w3.org/nu/#file -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Simple Galerie Responsive</title>
+        <meta name="description" content="Simple Galerie Responsive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Simple Galerie Responsive">
+	<meta name="Simple Galerie Responsive" content="all">
+        <meta property="og:type" content="Simple Galerie Responsive" />
+        <meta property="og:url" content="Simple Galerie Responsive" />
+        <meta property="og:image" content="votre-image.jpg"/>
+        <link rel="shortcut icon" type="image/png" href="votre-favicon.png"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Crée quatre colonnes égales les unes à côté des autres */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Disposition responsive - crée une disposition à deux colonnes au lieu de quatre colonnes */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Disposition responsive - rend les deux colonnes empilées l'une sur l'autre plutôt que l'une à côté de l'autre */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Galerie responsive</h1>
+  <p>Redimensionnez la fenêtre du navigateur pour voir l'effet réactif.</p>
+</div>
+
+<!-- Galerie image -->
+<div class="row"> 
+  <div class="column">
+    <img src="/images/1.jpg" style="width:100%" title="" alt="">
+    <img src="/images/2.jpg" style="width:100%" title="" alt="">
+    <img src="/images/3.jpg" style="width:100%" title="" alt="">
+    <img src="/images/4.jpg" style="width:100%" title="" alt="">
+    <img src="/images/5.jpg" style="width:100%" title="" alt="">
+    <img src="/images/6.jpg" style="width:100%" title="" alt="">
+
+  </div>
+  
+  <div class="column">
+    <img src="/images/7.jpg" style="width:100%" title="" alt="">
+    <img src="/images/8.jpg" style="width:100%" title="" alt="">
+    <img src="/images/9.jpg" style="width:100%" title="" alt="">
+    <img src="/images/10.jpg" style="width:100%" title="" alt="">
+    <img src="/images/11.jpg" style="width:100%" title="" alt="">
+    <img src="/images/12.jpg" style="width:100%" title="" alt="">
+  </div> 
+   
+  <div class="column">
+    <img src="/images/13.jpg" style="width:100%" title="" alt=""> 
+    <img src="/images/14.jpg" style="width:100%" title="" alt="">
+    <img src="/images/15.jpg" style="width:100%" title="" alt="">
+    <img src="/images/16.jpg" style="width:100%" title="" alt="">
+    <img src="/images/17.jpg" style="width:100%" title="" alt="">
+    <img src="/images/18.jpg" style="width:100%" title="" alt="">
+
+  </div>
+  
+  <div class="column">
+    <img src="/images/19.jpg" style="width:100%" title="" alt="">
+    <img src="/images/20.jpg" style="width:100%" title="" alt="">
+    <img src="/images/21.jpg" style="width:100%" title="" alt="">
+    <img src="/images/22.jpg" style="width:100%" title="" alt="">
+    <img src="/images/23.jpg" style="width:100%" title="" alt="">
+    <img src="/images/24.jpg" style="width:100%" title="" alt="">
+  </div>
+
+<!-- Et ainsi de suite si vous souhaitez ajouter des colonnes -->
+</div>
+
+<footer>
+<div class="footer">
+<p><a href="#">Haut de page</a></p>
+</div>
+</footer>
+
+
+</body>
+</html>
